@@ -18,20 +18,93 @@ html {
 }
 
 #job-offer {
-    background-color: brown;
-    width: 70%;
-    min-height: 100vh;
-}
-
-#aside {
-  background-color: aqua;
-  width: 30%;
+  background-color: brown;
+  width: 65%;
   min-height: 100vh;
 }
 
+#aside {
+  width: 35%;
+  min-height: 200vh;
+  position: relative;
+
+  background: rgb(17, 42, 67);
+  background: linear-gradient(
+    176deg,
+    rgba(17, 42, 67, 1) 0%,
+    rgba(48, 111, 83, 1) 44%,
+    rgba(48, 110, 82, 1) 100%
+  );
+}
+
 #footer {
-    width: 100vw;
-    height: auto;
+  width: 100vw;
+  height: auto;
 }
 
 /* The following styles relate to the positioning of sections of the side panel */
+
+.aside-content {
+  width: 75%;
+  color: white;
+
+  position: sticky;
+  margin: 0 auto;
+  top: 30%;
+}
+
+.aside-content__title {
+  margin: 0;
+  font-size: 2.35rem;
+  font-weight: 900;
+}
+
+.aside-content__text {
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.aside-content__button {
+  color: black;
+  font-weight: 700;
+
+  background-color: white;
+  border-radius: 28px;
+  cursor: pointer;
+  font-size: 17px;
+  padding: 20px 40px;
+  text-decoration: none;
+  outline: none;
+  border: none;
+
+  transition: background-color 1s ease;
+}
+
+.aside-content__button:hover {
+  /* background-color: #f8ffe5; */
+  background-color: rgb(252, 222, 190);
+  background-color: linear-gradient(
+    320deg,
+    rgba(252, 222, 190, 1) 0%,
+    rgba(212, 210, 165, 1) 100%
+  );
+}
+
+.aside-content__button--link {
+  text-decoration: none;
+}
+
+.aside-widget{
+    display: block;
+    width: 100%;
+    transform: scaleX(-1) rotate(28deg);
+    display: flex;
+    justify-content: center;
+}
+
+
+.aside-widget-arrow{
+    max-width: 35%;
+    height: auto;
+}
